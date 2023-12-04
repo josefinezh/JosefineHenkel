@@ -120,8 +120,10 @@ h3 {
 }
 
 .gallery div p {
-    margin: 0 auto;
+    margin: 0 20px;
     padding: 0;
+    font-size: 24px;
+    font-weight: 600;
     height: 30px;
     transform: translateY(15px);
     opacity: 0;
