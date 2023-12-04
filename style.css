@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial Rounded MT', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .header>div {
@@ -73,7 +74,34 @@ h3 {
 
 
 .nav {
-    padding: 10px 40px;
+    top: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-top: auto;
+}
+
+.nav img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .gallery {
