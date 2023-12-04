@@ -91,10 +91,9 @@ h3 {
 }
 
 .gallery div p {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: 30px;
-    text-align: center;
     transform: translateY(15px);
     opacity: 0;
     width: fit-content;
