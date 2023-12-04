@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    background-color: #1f352d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header>div {
+    margin-top: 300px;
+    height: 20%;
+
+}
+
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin: 0;
+}
+
+#arrow {
+    animation: arrow 2s infinite;
+    margin: auto;
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 100px;
+    transform: rotate(45deg) translate(-10px, -10px);
+    border: 3px solid #fff;
+    border-top: 0;
+    border-left: 0;
+}
+
+#cv {
+    background: transparent;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    font-weight: 600;
+    padding: 8px 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#cv:hover {
+    background: #fff;
+    color: #1f352d;
+}
+
+
+.nav {
+    padding: 10px 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 0;
+}
+
+.gallery div {
+    width: 33.33%;
+    margin: 0;
+    margin-bottom: -30px;
+}
+
+.gallery div p {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-align: center;
+    transform: translateY(15px);
+    opacity: 0;
+    width: fit-content;
+}
+
+.gallery div:hover p {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+p.invert {
+    color: #ddd;
+}
+
+.gallery div img {
+    margin-top: -30px;
+    height: 42vw;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+p.footer {
+    margin: 30px auto -30px;
+    text-align: center;
+    color: #70837c;
+}
+
+@keyframes arrow {
+    0% {
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+
+    50% {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+}
+
+@media (max-width: 968px) {
+    .gallery div {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .gallery div {
+        width: 100%;
+    }
+}
