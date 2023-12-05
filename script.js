@@ -26,7 +26,7 @@ async function dynamicLoad(url, prjid, vid) {
 // insert magic mouse .js like effect of circle following mouse
 var cursor = document.getElementById('cursor');
 var cursor = document.getElementById('cursor');
-var delay = 100; // Delay in milliseconds
+var delay = 75; // Delay in milliseconds
 
 document.addEventListener('mousemove', function(e){
     var x = e.clientX;
