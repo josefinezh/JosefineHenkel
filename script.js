@@ -31,6 +31,7 @@ var delay = 75; // Delay in milliseconds
 document.addEventListener('mousemove', function(e){
     var x = e.clientX;
     var y = e.clientY;
+    cursor.style.opacity = 1;
 
     setTimeout(function() {
         cursor.style.left = x + "px";

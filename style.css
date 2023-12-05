@@ -35,6 +35,8 @@ body {
     align-items: center;
     margin-bottom: 40px;
     color: #fff;
+
+    cursor: url("img/cursor.svg"), auto;
 }
 
 h1 {
@@ -116,9 +118,8 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
     gap: 0;
-    cursor: url("");
+    cursor: url("img/cursor.svg"), auto;
     
 }
 
@@ -157,9 +158,11 @@ p.invert {
 }
 
 p.footer {
-    margin: 30px auto -30px;
+    margin: 30px auto 0;
+    padding-bottom: 10px;
     text-align: center;
     color: #70837c;
+    cursor: url("img/cursor.svg"), auto
 }
 
 
@@ -167,8 +170,7 @@ p.footer {
     #cursor {
         display: block;
         position: sticky;
-        top: 0;
-        left: 0;
+        opacity: 0;
         width: 20px;
         height: 20px;
         border: 1px solid #fff;
@@ -177,12 +179,10 @@ p.footer {
         pointer-events: none;
         z-index: 9999;
         transition-property: width, height, border, border-radius;
-    }
-
-    #cursor {
-        margin-bottom: -22px;
+        margin-bottom: -20px;
     }
 }
+
 
 @media (hover: none) {
    #cursor {
