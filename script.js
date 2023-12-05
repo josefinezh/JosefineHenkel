@@ -22,4 +22,20 @@ async function dynamicLoad(url, prjid, vid) {
 
             })
         });
+
+// insert magic mouse .js like effect of circle following mouse
+var cursor = document.getElementById('cursor');
+var cursor = document.getElementById('cursor');
+var delay = 100; // Delay in milliseconds
+
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+
+    setTimeout(function() {
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+    }, delay);
+});
 }
+
